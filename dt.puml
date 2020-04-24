@@ -1,0 +1,56 @@
+@startuml
+
+hide circle
+skinparam classAttributeIconSize 0
+
+rectangle "Button" {
+}
+
+rectangle "Door" {
+}
+
+rectangle "UserInterface" {
+}
+
+rectangle "Light" {
+}
+
+rectangle "Display" {
+}
+
+rectangle "CookController" {
+}
+
+rectangle "Timer" {
+}
+
+rectangle "Output" {
+}
+
+rectangle "Powertube" {
+}
+
+Display --- Output
+
+Light --- Output
+
+Powertube --- Output
+
+CookController --- UserInterface
+
+CookController --- Display
+
+CookController --- Powertube
+
+CookController --- Timer
+
+UserInterface --- CookController
+
+UserInterface --- Button
+
+UserInterface --- Door
+
+UserInterface --- Light
+
+UserInterface --- Display
+@enduml
