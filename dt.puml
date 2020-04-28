@@ -2,6 +2,7 @@
 
 hide circle
 skinparam classAttributeIconSize 0
+skinparam linetype polyline
 
 rectangle "Button" {
 }
@@ -43,6 +44,8 @@ CookController --- Powertube
 CookController --- Timer
 
 UserInterface --- CookController
+
+CookController --- UserInterface
 
 UserInterface --- Button
 
