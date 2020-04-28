@@ -4,7 +4,7 @@ using MicrowaveOvenClasses.Boundary;
 using MicrowaveOvenClasses.Interfaces;
 using NUnit.Framework;
 
-namespace Microwave.Test.Integration
+namespace Microwave.Test.Integrations
 {
     [TestFixture]
     public class LightDriver
