@@ -9,11 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microwave.Test.Unit", "Micr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microwave.Application", "Microwave.Application\Microwave.Application.csproj", "{403619F7-9DFE-4C73-BEEF-C1C405CEC63D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microwave.Test.Integration", "Microwave.Test.Integration\Microwave.Test.Integration.csproj", "{474908E5-C813-49AA-9D92-97E9F309C427}"
-	ProjectSection(ProjectDependencies) = postProject
-		{2B04DA6B-AFE9-4548-AA05-84D806BA0FA4} = {2B04DA6B-AFE9-4548-AA05-84D806BA0FA4}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microwave.Test.Integrations", "Microwave.Test.Integrations\Microwave.Test.Integrations.csproj", "{3D7F526D-726E-4F70-950A-87BD29DDEDBE}"
 EndProject
 Global
