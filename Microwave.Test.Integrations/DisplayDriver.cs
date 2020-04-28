@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using MicrowaveOvenClasses.Boundary;
 
-namespace Microwave.Test.Integration
+namespace Microwave.Test.Integrations
 {
     [TestFixture]
     class DisplayDriver
