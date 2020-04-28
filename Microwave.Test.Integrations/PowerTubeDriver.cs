@@ -2,8 +2,6 @@ using System;
 using System.IO;
 using MicrowaveOvenClasses.Boundary;
 using MicrowaveOvenClasses.Interfaces;
-using NSubstitute;
-using NSubstitute.Core.Arguments;
 using NUnit.Framework;
 
 namespace Microwave.Test.Integrations
@@ -30,25 +28,7 @@ namespace Microwave.Test.Integrations
             {
                 Console.SetOut(sw);    
                 _powerTube.TurnOn(power);
-                string expected = $"PowerTube works with {power}";
-                Assert.AreEqual(expected, sw.ToString());
-            }
-        }
-
-        
-
-        [TestCase(-5)]
-        [TestCase(-1)]
-        [TestCase(0)]
-        [TestCase(101)]
-        [TestCase(150)]
-        public void TurnOn_WasOffOutOfRangePower_ThrowsException(int power)
-        {
-            using (StringWriter sw = new StringWriter())
-            {
-                Console.SetOut(sw);    
-                _powerTube.TurnOn(power);
-                string expected = $"power, {power}, Must be between 1 and 100 (incl.){Environment.NewLine}";
+                string expected = $"PowerTube works with {power.ToString()}{Environment.NewLine}";
                 Assert.AreEqual(expected, sw.ToString());
             }
         }
@@ -74,18 +54,6 @@ namespace Microwave.Test.Integrations
                 Console.SetOut(sw); 
                 _powerTube.TurnOff();
                 string expected = $"";
-                Assert.AreEqual(expected, sw.ToString());
-            }
-        }
-
-        [Test]
-        public void TurnOn_WasOn_ThrowsException()
-        {
-            using (StringWriter sw = new StringWriter())
-            {
-                Console.SetOut(sw);    
-                _powerTube.TurnOn(50);
-                string expected = $"PowerTube.TurnOn: is already on{Environment.NewLine}";
                 Assert.AreEqual(expected, sw.ToString());
             }
         }

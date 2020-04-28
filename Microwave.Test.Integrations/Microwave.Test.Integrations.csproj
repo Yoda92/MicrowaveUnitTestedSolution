@@ -36,6 +36,7 @@
     <ItemGroup>
       <Compile Include="DisplayDriver.cs" />
       <Compile Include="LightDriver.cs" />
+      <Compile Include="PowerTubeDriver.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\MicrowaveOvenClasses\MicrowaveOvenClasses.csproj">
